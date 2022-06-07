@@ -47,7 +47,7 @@ ifeq ($(findstring win,$(OS)),win)
 
     PIC?=0
 
-    DRUNTIME_PATH=..\..\druntime
+    DRUNTIME_PATH=..\src\druntime
     PHOBOS_PATH=..\..\phobos
     export DFLAGS=-I$(DRUNTIME_PATH)\import -I$(PHOBOS_PATH)
     export LIB=$(PHOBOS_PATH)
@@ -85,7 +85,7 @@ else
         export PIC_FLAG:=
     endif
 
-    DRUNTIME_PATH=../../druntime
+    DRUNTIME_PATH=../src/druntime
     PHOBOS_PATH=../../phobos
     # link against shared libraries (defaults to true on supported platforms, can be overridden w/ make SHARED=0)
     SHARED=$(if $(findstring $(OS),linux freebsd),1,)

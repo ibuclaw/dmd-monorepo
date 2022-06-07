@@ -9,7 +9,7 @@ MODEL=64
 VCDIR=\Program Files (x86)\Microsoft Visual Studio 10.0\VC
 SDKDIR=\Program Files (x86)\Microsoft SDKs\Windows\v7.0A
 
-DMD_DIR=..\dmd
+DMD_DIR=..\..
 BUILD=release
 OS=windows
 DMD=$(DMD_DIR)\generated\$(OS)\$(BUILD)\$(MODEL)\dmd
