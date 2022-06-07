@@ -5,7 +5,7 @@
 
 QUIET:=
 
-DMD_DIR=../dmd
+DMD_DIR=../..
 DUB=dub
 TOOLS_DIR=../tools
 

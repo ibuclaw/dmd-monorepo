@@ -152,7 +152,7 @@ fi
 # Build and run druntime tests
 ################################################################################
 
-cd "$DMD_DIR/../druntime"
+cd "$DMD_DIR/src/druntime"
 "$DM_MAKE" "${LIBS_MAKE_ARGS[@]}" unittest test_all
 
 ################################################################################

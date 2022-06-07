@@ -16,5 +16,5 @@ auto-tester-test:
 	cd ..
 	cd samples
 	gmake -f win32.mak DMD=..\src\dmd.exe MODEL=$(MODEL) "LIB=..\..\phobos;$(LIB)" \
-		"DFLAGS=-I..\..\druntime\import -I..\..\phobos -m$(MODEL)"
+		"DFLAGS=-I..\src\druntime\import -I..\..\phobos -m$(MODEL)"
 	cd ..
