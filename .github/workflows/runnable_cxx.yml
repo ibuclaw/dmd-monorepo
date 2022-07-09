@@ -47,7 +47,7 @@ on:
 jobs:
   main:
     name: Run
-    if: github.repository == 'dlang/dmd'
+    if: github.repository == 'ibuclaw/dmd-monorepo'
 
     strategy:
       # Since those tests takes very little time, don't use `fail-fast`.
@@ -207,7 +207,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         path: phobos
-        repository: dlang/phobos
+        repository: ibuclaw/phobos-monorepo
         ref: ${{ steps.base_branch.outputs.branch }}
         persist-credentials: false
 
