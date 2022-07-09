@@ -97,11 +97,11 @@ setup_repos() {
 
     for proj in phobos; do
         if [ $base_branch != master ] && [ $base_branch != stable ] &&
-            ! git ls-remote --exit-code --heads https://github.com/dlang/$proj.git $base_branch > /dev/null; then
+            ! git ls-remote --exit-code --heads https://github.com/ibuclaw/$proj-monorepo.git $base_branch > /dev/null; then
             # use master as fallback for other repos to test feature branches
-            clone https://github.com/dlang/$proj.git ../$proj master --depth 1
+            clone https://github.com/ibuclaw/$proj-monorepo.git ../$proj master --depth 1
         else
-            clone https://github.com/dlang/$proj.git ../$proj $base_branch --depth 1
+            clone https://github.com/ibuclaw/$proj-monorepo.git ../$proj $base_branch --depth 1
         fi
     done
 }
